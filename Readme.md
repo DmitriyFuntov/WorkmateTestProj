@@ -1,9 +1,10 @@
-#Описание
+# Описание
 Скрипт анализирует CSV-файлы с данными о студентах и формирует отчёты по их тратам на кофе.
 В настоящее время поддерживается один отчёт median-coffee. Для добавления отчета нужно добавить ной метод в файл reports.py и добавить к нему декоратор '@register_report("repurt-name")'.
 
-#Демонстрация
-##Один файл
+# Демонстрация
+
+## Один файл
 Ввод:
 ``` bash
 PS D:\ProjectsD\TestProjects\WorkmateTestProj> python main/get_report.py --files data/math.csv --report median-coffee
@@ -44,7 +45,7 @@ PS D:\ProjectsD\TestProjects\WorkmateTestProj> python main/get_report.py --files
 | Мария Соколова    |                          120 |
 +-------------------+------------------------------+
 ```
-##Несколько файлов
+## Несколько файлов
 Ввод:
 ``` bash
 PS D:\ProjectsD\TestProjects\WorkmateTestProj> python main/get_report.py --files data/math.csv data/physics.csv --report median-coffee
@@ -85,7 +86,7 @@ PS D:\ProjectsD\TestProjects\WorkmateTestProj> python main/get_report.py --files
 | Мария Соколова    |                          135 |
 +-------------------+------------------------------+
 ```
-##Неверный ввод
+## Неверный ввод
 Ввод:
 ``` bash
 PS D:\ProjectsD\TestProjects\WorkmateTestProj> python main/get_report.py --files data/math.csv --report NOT-median-coffee
